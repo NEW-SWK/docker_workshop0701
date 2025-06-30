@@ -9,7 +9,7 @@ print(quiz_answer)
 @app.route('/')
 def index():
     if quiz_answer=="correct":
-        return render_template("index.html")
+        return render_template("yes.html")
     else:
         return render_template("no.html")
 
