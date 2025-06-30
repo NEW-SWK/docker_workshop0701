@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  docker_workshop:
+    build: .
+    image: my-docker-workshop
+    command: python app.py
+    ports:
+      - "8000:8000"
