@@ -1,4 +1,6 @@
 from flask import Flask, render_template
+# import requests
+# import random
 import os
 
 app = Flask(__name__)
@@ -12,6 +14,13 @@ def index():
         return render_template("yes.html")
     else:
         return render_template("no.html")
+
+# @app.route('/omikuji')
+# def omikuji():
+#     num = random.randint(1, 3)
+#     result = {1: "大吉", 2: "中吉", 3: "凶"}[num]
+#     return f"<h1>今日の運勢は {result}！</h1>"
+
 
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0', port=8000)
