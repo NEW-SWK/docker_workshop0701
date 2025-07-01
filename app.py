@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+# クイズ2用
 # import requests
 # import random
 import os
@@ -15,6 +16,7 @@ def index():
     else:
         return render_template("no.html")
 
+# クイズ2用
 # @app.route('/omikuji')
 # def omikuji():
 #     num = random.randint(1, 3)
@@ -24,3 +26,7 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0', port=8000)
+
+# クイズ3用
+# if __name__ == '__main__':
+#     app.run(debug=True,host='0.0.0.0', port=5000)
